@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Board</title>
+</head>
+<header>
+    <h1>Guesser</h1>
+    <p class="callout">I hardly know her!/or him! or them!</p> <!-- every time page refresh there should be a different callout -->
+ </header>
+<body>
+    <!-- 
+    DESIGN:
+    charSheetBox is centered. rules div on right side + sticky
+    -->
+
+    <div class="rules">
+        <h4>DIRECTIONS</h4>
+        <ul>
+            <li>Download images of characters online</li>
+            <li>Upload images using the multi file upload button or drop images in file upload area</li>
+            <li>Share image files with partner so they can follow steps above</li>
+            <br>
+            Note:
+            <li>Limit: 4-24 Characters</li>
+            <li>Filename of will be the default name of character</li>
+            <li>Images will be cropped 3:4 aspect ratio</li>
+        </ul>
+    </div>
+
+    <div class="editBox">
+        <div class="charSheetBox">
+
+            <h4>CHARACTER SHEET</h4>
+
+            <!-- insert before file upload button           hidden if list is cleared shown after uploaded image -->
+            <div class="charSheetGrid">
+                <!--
+                Create a table element 
+                COLUMNS: "Names", "Image", remove?
+                ROWS: file names in textboxes, image, x remove button
+                -->
+            </div>
+
+            <div class="uploadImg">
+                <!-- multifile img upload btn/drop      max: 24 files -->
+            </div>
+
+            
+        </div>
+
+        <div class="editBtns">
+            <button>CLEAR</button>
+            <button>RESET</button>
+            <!-- gap -->
+            <button>CREATE</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
